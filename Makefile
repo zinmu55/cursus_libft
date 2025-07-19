@@ -6,7 +6,7 @@
 #    By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/18 11:04:36 by yonuma            #+#    #+#              #
-#    Updated: 2025/07/19 20:02:27 by skohtake         ###   ########.fr        #
+#    Updated: 2025/07/19 20:36:52 by skohtake         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ RM = rm -f
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 INCLUDES = 	#-I includes
-AR = ar rc
+AR = ar rcs
 
 ifeq ($(MAKECMDGOALS), bonus)
 	OBJS += $(BONUS_OBJS)
@@ -80,7 +80,20 @@ bonus : $(NAME)
 
 $(NAME) : $(OBJS)
 	$(AR) $@ $^
-	ranlib $(NAME)
+# 	ranlib $(NAME)
+
+# ifdef WITH_BONUS
+# 	OBJS += $(BOBJS)
+# endif
+
+# all: $(NAME)
+
+# $(NAME) : $(OBJS)
+# 	$(AR) $@ $^
+# # 	ranlib $(NAME)
+
+bonus:
+	make WITH_BONUS=TRUE
 
 %.o:%.c
 	$(CC) -c $(CFLAGS) $(INCLUDES) $< -o $@
