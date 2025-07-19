@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: shintarokohtake <shintarokohtake@studen    +#+  +:+       +#+         #
+#    By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/18 11:04:36 by yonuma            #+#    #+#              #
-#    Updated: 2025/07/19 10:56:02 by shintarokoh      ###   ########.fr        #
+#    Updated: 2025/07/19 14:54:44 by skohtake         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,14 +57,14 @@ BONUS =	ft_lstnew.c \
         ft_lstiter.c \
         ft_lstmap.c 
 
-MANDATORY_SRCS = $(addprefix srcs/, $(MANDATORY))
+MANDATORY_SRCS = $(MANDATORY)
 MANDATORY_OBJS = $(MANDATORY_SRCS:.c=.o)
-BONUS_SRCS = $(addprefix srcs/, $(BONUS))
+BONUS_SRCS = $(BONUS)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 RM = rm -f
 CC = cc -c
 CFLAGS = -Wall -Wextra -Werror
-INCLUDES = -I includes
+INCLUDES =	#-I includes
 AR = ar rc
 
 
