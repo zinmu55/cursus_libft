@@ -6,7 +6,7 @@
 /*   By: shintarokohtake <shintarokohtake@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 20:23:07 by shintarokoh       #+#    #+#             */
-/*   Updated: 2025/07/18 20:46:18 by shintarokoh      ###   ########.fr       */
+/*   Updated: 2025/07/26 10:03:32 by shintarokoh      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,11 @@ int	ft_lstsize(t_list *lst)
 		}
 	}
 	return (i);
+}
+
+// you must comment out below
+
+int	main()
+{
+	
 }
