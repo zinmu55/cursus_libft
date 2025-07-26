@@ -6,7 +6,7 @@
 /*   By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 21:45:00 by skohtake          #+#    #+#             */
-/*   Updated: 2025/07/26 11:48:26 by skohtake         ###   ########.fr       */
+/*   Updated: 2025/07/26 14:09:23 by skohtake         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 
 	if (!lst || !del)
 		return ;
-	else
+	while (*lst)
 	{
-		while (*lst)
-		{
-			del((*lst)->content);
-			tmp = (*lst)->next;
-			free(*lst);
-			*lst = tmp;
-		}
+		del((*lst)->content);
+		tmp = (*lst)->next;
+		free(*lst);
+		*lst = tmp;
 	}
 }
 
