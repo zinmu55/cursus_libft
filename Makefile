@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+         #
+#    By: shintarokohtake <shintarokohtake@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/18 11:04:36 by yonuma            #+#    #+#              #
-#    Updated: 2025/07/19 20:36:52 by skohtake         ###   ########.fr        #
+#    Updated: 2025/07/26 10:00:15 by shintarokoh      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,8 +92,8 @@ $(NAME) : $(OBJS)
 # 	$(AR) $@ $^
 # # 	ranlib $(NAME)
 
-bonus:
-	make WITH_BONUS=TRUE
+# bonus:
+# 	make WITH_BONUS=TRUE
 
 %.o:%.c
 	$(CC) -c $(CFLAGS) $(INCLUDES) $< -o $@
