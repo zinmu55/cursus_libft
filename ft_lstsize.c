@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shintarokohtake <shintarokohtake@studen    +#+  +:+       +#+        */
+/*   By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 20:23:07 by shintarokoh       #+#    #+#             */
-/*   Updated: 2025/07/26 10:03:32 by shintarokoh      ###   ########.fr       */
+/*   Updated: 2025/07/26 12:17:23 by skohtake         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,4 @@ int	ft_lstsize(t_list *lst)
 		}
 	}
 	return (i);
-}
-
-// you must comment out below
-
-int	main()
-{
-	
 }

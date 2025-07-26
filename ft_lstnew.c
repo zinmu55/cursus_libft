@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shintarokohtake <shintarokohtake@studen    +#+  +:+       +#+        */
+/*   By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 21:56:25 by shintarokoh       #+#    #+#             */
-/*   Updated: 2025/07/26 10:22:52 by shintarokoh      ###   ########.fr       */
+/*   Updated: 2025/07/26 11:06:24 by skohtake         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,10 @@ t_list	*ft_lstnew(void *content)
 
 // // you must comment out below
 
-// int	main()
+// int	main(void)
 // {
 // 	t_list	*node;
 
 // 	node = ft_lstnew("Hello");
-	
 // 	printf(" node->content : %s \n", (char *)(node->content));
 // }

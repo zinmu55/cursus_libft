@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shintarokohtake <shintarokohtake@studen    +#+  +:+       +#+        */
+/*   By: skohtake <skohtake@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 22:21:59 by shintarokoh       #+#    #+#             */
-/*   Updated: 2025/07/26 11:03:41 by shintarokoh      ###   ########.fr       */
+/*   Updated: 2025/07/26 11:06:35 by skohtake         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 // // you must comment out below
 
-// int	main()
+// int	main(void)
 // {
 // 	t_list	**lst;
 // 	t_list	*first_node;
@@ -32,7 +32,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	second_node = ft_lstnew("second");
 // 	lst = &first_node;
 // 	ft_lstadd_front(lst, second_node);
-
 // 	printf(" (*lst)->content	: %s \n", (char *)((*lst)->content));
 // 	printf(" (*lst)->next->content	: %s \n", (char *)((*lst)->next->content));
 // }
